@@ -7,7 +7,11 @@ The source code is placed under BSD-3 license.
 
 Supporting the project can be done financially or through purchases at our embedded Electronic store at [lecomptoirelectronique.fr](https://lecomptoirelectronique.fr). MCU/CPUs support and are delivered programmed with RtBSD. 
 
-“Real time” functions must not overflow, they are executed in interrupt context. User code can be called in this context. “Scheduled” functions are stacked. They can be interrupted and executed in successive batches.
+  * Unordered List Item"Real time" functions must not overflow, they are executed in interrupt context.
+    *  User code can be implemented in this context.
+  * "Scheduled" functions are stacked. They can be interrupted and executed in successive batches.
+    * Main user function is executed in a scheduled 100ms context
+  * Task stack overflow is monitored
 
 ```
 void function_4ms_realtime(void);  // Real time 4 ms period function - Interrupt context
