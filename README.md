@@ -3,6 +3,10 @@ Real time mini operating system for micro-controllers
 
 RtBSD is an open source real time mini operating system for microcontrollers. It currently runs on PIC 16F886. Its port is possible to most 8/16 bits other microctrolles such as Atmel, Microchip, ESP, STM, NXP, …
 
+The source code is placed under BSD-3 license.
+
+Supporting the project can be done financially or through purchases at our embedded Electronic store at lecomptoirelectronique.fr. MCU/CPUs support and are delivered programmed with RtBSD. 
+
 “Real time” functions must not overflow, they are executed in interrupt context. User code can be called in this context. “Scheduled” functions are stacked. They can be interrupted and executed in successive batches.
 
 ```
